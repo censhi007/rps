@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:aop="http://www.springframework.org/schema/aop" 
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+	http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+	http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd"
+	default-lazy-init="true">
+	<bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/> 
+	<bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
+	<bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		<property name="exceptionMappings">
+			<props>
+				<prop key="org.springframework.web.bind.MissingServletRequestParameterException">/error/400</prop>
+				<prop key="org.springframework.beans.TypeMismatchException">/error/400</prop>
+				<prop key="org.springframework.web.bind.ServletRequestBindingException">/error/500</prop>
+				<prop key="org.springframework.dao.DataIntegrityViolationException">/error/500</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="lgPointcut" class="org.springframework.aop.support.annotation.AnnotationMatchingPointcut">
+        <constructor-arg index="0" value="org.springframework.stereotype.Controller"></constructor-arg>
+        <constructor-arg index="1" value="com.mboots.com.log.inf.Lga"></constructor-arg>
+    </bean>
+ <!--
+    <bean id="lgAdvisor" class="org.springframework.aop.support.DefaultPointcutAdvisor">
+        <property name="advice" ref="lgadvice" />
+        <property name="pointcut" ref="lgPointcut" />
+    </bean>
+    --> 
+    
+  <aop:config>
+    <aop:advisor advice-ref="lgadvice" pointcut-ref="lgPointcut" />
+  </aop:config>  
+ 	
+	<context:annotation-config/>
+	<mvc:annotation-driven/> 	
+	<import resource="restful-action.xml"/>
+</beans>

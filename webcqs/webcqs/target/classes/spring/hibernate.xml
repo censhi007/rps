@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.directwebremoting.org/schema/spring-dwr http://www.directwebremoting.org/schema/spring-dwr-2.0.xsd">	
+	<bean id="SessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="DataSource" />
+		</property>
+		<property name="mappingLocations">
+			<list>
+				<value>classpath*:/hibernate/common/*.hbm.xml</value>
+				<value>${hibernate_mapping}</value>
+				<!-- hibernate generate start-->
+				<!-- hibernate generate end -->
+				<!-- please do not change this module,it will be rewritten automatically with the data included by the module jars in the WEB-INF/lib/modules-->
+			</list>
+		</property>
+		<property name="configurationClass" value="com.webcqs.spring.ClusterConfiguration" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${sqldialect}</prop>
+				<prop key="hibernate.show_sql">${show_sql}</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="DataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>${driverClassName}</value>
+		</property>
+		<property name="url">
+			<value>${url}</value>
+		</property>
+		<property name="username">
+			<value>${username}</value>
+		</property>
+		<property name="password">
+			<value>${password}</value>
+		</property>
+	</bean>
+	
+
+</beans>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/main/resources"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_21"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-betwixt-0.8.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-codec-1.3.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-configuration-1.5.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-dbcp-1.2.2.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-digester-1.7.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-fileupload-1.2.1.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-httpclient-3.0.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/commons-pool-1.4.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/spring-2.5.4.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/webservices-api.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/webservices-extra-api.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/webservices-extra.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/webservices-rt.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/webservices-tools.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/wsdl4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="src/main/lib/wstx-asl-3.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/Desktop/wsdl2js-0.1.1/lib/commons-cli-1.0.jar"/>
+	<classpathentry kind="output" path="src/main/bin"/>
+</classpath>

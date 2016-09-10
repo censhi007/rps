@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:dwr="http://www.directwebremoting.org/schema/spring-dwr"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.directwebremoting.org/schema/spring-dwr http://www.directwebremoting.org/schema/spring-dwr-2.0.xsd">
+	
+	
+	<bean id="cacheManager" class="com.mboots.com.cache.TCacheManger">
+		<property name="configLocation">
+			<value>classpath:ehcache.xml</value>
+		</property>
+		<property name="diskStoreLocation">
+			<value>${cache.diskLocation}</value>
+		</property>
+		<property name="cacheManagerName" value="_NORMAL_cacheManager_"></property>
+	</bean>
+	<bean id="commonCache" class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+		<property name="cacheManager" ref="cacheManager">
+		</property>
+		<property name="cacheName">
+			<value>com.mboots.com.Common</value>
+		</property>
+	</bean>
+	<bean id="navCache" class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+		<property name="cacheManager" ref="cacheManager">
+		</property>
+		<property name="cacheName">
+			<value>com.mboots.com.nav.model.Nav</value>
+		</property>
+	</bean>
+</beans>

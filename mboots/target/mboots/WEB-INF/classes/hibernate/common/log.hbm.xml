@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.mboots.com.log.model.Lg" table="syslog" schema="dbo" catalog="[public]" >
+        <id name="id" type="java.lang.String">
+        	<column name="_id" length="32" />
+        	<generator class="uuid.hex"></generator>
+        </id>
+        <property name="dwdm" type="java.lang.String">
+            <column name="dwdm" length="20" />
+        </property>
+        <property name="user" type="java.lang.String">
+            <column name="userid" length="20" />
+        </property>
+        <property name="msg" type="java.lang.String">
+            <column name="rightobjid" length="255"/>
+        </property> 
+        <property name="vdate" type="java.util.Date">
+            <column name="vdate"/>
+        </property>  
+        <property name="ip" type="java.lang.String">
+            <column name="ip" length="20"/>
+        </property>  
+        <property name="browser" type="java.lang.String">
+            <column name="expleror" length="50"/>
+        </property>  
+        <property name="os" type="java.lang.String">
+            <column name="os" length="50"/>
+        </property>  
+        <property name="tel" type="java.lang.String">
+            <column name="tel" length="50"/>
+        </property>      
+    </class>
+</hibernate-mapping>

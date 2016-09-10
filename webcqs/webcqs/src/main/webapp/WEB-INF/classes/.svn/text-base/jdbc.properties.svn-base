@@ -1,0 +1,15 @@
+#init params loaded
+#Tue Sep 16 15:06:23 CST 2014
+url=jdbc\:sqlserver\://192.168.0.251\:1433;database\=public
+contextConfigLocation=classpath\:applicationContext.xml
+log4jConfigLocation=classpath\:log4j.xml
+handler_path=D\:/my work/webcqs/src/main/webapp/WEB-INF/classes/handler.properties
+log4jRefreshInterval=3000
+driverClassName=com.microsoft.sqlserver.jdbc.SQLServerDriver
+hibernate_mapping=classpath*\:/hibernate/mssql/*.hbm.xml
+username=sa
+show_sql=false
+dbtype=mssql
+password=sa
+webAppRootKey=cq.root
+sqldialect=com.web.dialect.SQLServer2KDialect

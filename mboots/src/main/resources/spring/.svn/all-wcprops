@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/spring
+END
+hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/spring/hibernate.xml
+END
+services.xml
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/spring/services.xml
+END
+cache-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/spring/cache-context.xml
+END
+extend.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/spring/extend.xml
+END
+beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/spring/beans.xml
+END

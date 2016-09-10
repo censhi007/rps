@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/java/com/mboots/com/sql/dialect
+END
+AsFuctionCommonTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/java/com/mboots/com/sql/dialect/AsFuctionCommonTemplate.java
+END
+SQLServer2KDialect.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/java/com/mboots/com/sql/dialect/SQLServer2KDialect.java
+END
+AsFunctionOracleTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/java/com/mboots/com/sql/dialect/AsFunctionOracleTemplate.java
+END

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<bean id="dbi" class="com.web.svs.imp.DBO">
+	<property name="sessionFactory">
+		<ref bean="SessionFactory"/>
+	</property>
+	</bean>
+	<!--缓存 <bean id="cacheManager" class="com.kingyi.sz.cache.TCacheManger"> 
+		<property name="configLocation"> <value>classpath:config/ehcache.xml</value> 
+		</property> <property name="diskStoreLocation"> <value>WEB-INF/cache</value> 
+		</property> </bean> <bean id="wxCache" class="org.springframework.cache.ehcache.EhCacheFactoryBean"> 
+		<property name="cacheManager"> <ref local="cacheManager"/> </property> <property 
+		name="cacheName"> <value>com.kingyi.sz.wx</value> </property> </bean> <bean 
+		id="iCache" class="com.kingyi.sz.wx.ICache"> <property name="cache"> <ref 
+		bean="wxCache"/> </property> </bean> -->
+
+</beans>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources
+END
+ehcache.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/ehcache.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/applicationContext.xml
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/jdbc.properties
+END
+lang_zh.properties
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/lang_zh.properties
+END
+ehcache-hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/ehcache-hibernate.xml
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/projectb/!svn/ver/14687/WEB/maven/mboots/src/main/resources/log4j.xml
+END

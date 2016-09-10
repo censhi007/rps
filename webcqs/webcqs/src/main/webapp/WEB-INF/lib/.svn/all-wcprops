@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib
+END
+javassist-3.4.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/javassist-3.4.GA.jar
+END
+wssvs.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/projectb/!svn/ver/14502/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/wssvs.jar
+END
+commons-io-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-io-1.4.jar
+END
+wx_cbu.jar
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/wx_cbu.jar
+END
+commons-codec-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-codec-1.3.jar
+END
+commons-dbcp-1.2.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-dbcp-1.2.2.jar
+END
+commons-collections-3.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-collections-3.2.1.jar
+END
+commons-lang-2.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-lang-2.4.jar
+END
+XmlSchema-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/XmlSchema-1.1.jar
+END
+saaj-impl-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/saaj-impl-1.3.jar
+END
+slf4j-api-1.5.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/slf4j-api-1.5.2.jar
+END
+hibernate-core-3.3.1.GA.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/hibernate-core-3.3.1.GA.jar
+END
+mysql-connector-java-5.1.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/mysql-connector-java-5.1.6.jar
+END
+slf4j-log4j12-1.5.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/slf4j-log4j12-1.5.2.jar
+END
+mail-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/mail-1.4.jar
+END
+commons-digester-1.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-digester-1.7.jar
+END
+xfire-java5-1.2.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/xfire-java5-1.2.6.jar
+END
+antlr-2.7.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/antlr-2.7.7.jar
+END
+jsr173_api-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/jsr173_api-1.0.jar
+END
+commons-logging-1.0.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-logging-1.0.4.jar
+END
+dom4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/dom4j-1.6.1.jar
+END
+commons-betwixt-0.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-betwixt-0.8.jar
+END
+weather_cbu.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/weather_cbu.jar
+END
+spring-webmvc-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/spring-webmvc-1.0.jar
+END
+saaj-api-1.3.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/saaj-api-1.3.jar
+END
+commons-fileupload-1.2.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-fileupload-1.2.1.jar
+END
+proxy.jar
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/projectb/!svn/ver/14253/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/proxy.jar
+END
+ehcache-1.6.2.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/ehcache-1.6.2.jar
+END
+jaxws-api-2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/jaxws-api-2.0.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/log4j-1.2.16.jar
+END
+xfire-annotations-1.2.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/xfire-annotations-1.2.6.jar
+END
+jaxen-1.1-beta-9.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/jaxen-1.1-beta-9.jar
+END
+wstx-asl-3.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/wstx-asl-3.2.0.jar
+END
+spring-web-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/spring-web-1.0.jar
+END
+xfire-spring-1.2.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/xfire-spring-1.2.6.jar
+END
+commons-configuration-1.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-configuration-1.5.jar
+END
+activation-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/activation-1.1.jar
+END
+xfire-aegis-1.2.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/xfire-aegis-1.2.6.jar
+END
+jta-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/jta-1.1.jar
+END
+jdom-1.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/jdom-1.0.jar
+END
+spring-2.5.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/spring-2.5.4.jar
+END
+commons-httpclient-3.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-httpclient-3.0.jar
+END
+xbean-spring-2.8.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/xbean-spring-2.8.jar
+END
+testng-5.10-jdk15.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/testng-5.10-jdk15.jar
+END
+pjl-comp-filter-1.7.jar
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/pjl-comp-filter-1.7.jar
+END
+wsdl4j-1.6.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/wsdl4j-1.6.1.jar
+END
+sqljdbc4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/sqljdbc4.jar
+END
+commons-pool-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-pool-1.4.jar
+END
+commons-beanutils-1.7.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/commons-beanutils-1.7.0.jar
+END
+pinyin4j-2.5.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/pinyin4j-2.5.0.jar
+END
+stax-api-1.0.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/stax-api-1.0.1.jar
+END
+xfire-core-1.2.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/xfire-core-1.2.6.jar
+END
+xfire-jaxws-1.2.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/xfire-jaxws-1.2.6.jar
+END
+servlet-api.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/lib/servlet-api.jar
+END

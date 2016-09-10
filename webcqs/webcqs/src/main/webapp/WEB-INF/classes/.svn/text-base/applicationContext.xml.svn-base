@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+    "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<import resource="classpath:com/webcqs/res/ws.xml" />
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:jdbc.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="SessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="DataSource" />
+		</property>
+		<property name="mappingLocations">
+			<list>
+				<value>classpath*:/hibernate/common/*.hbm.xml</value>
+				<value>${hibernate_mapping}</value>
+			</list>
+		</property>
+		<property name="configurationClass" value="com.webcqs.spring.ClusterConfiguration" />
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${sqldialect}</prop>
+				<prop key="hibernate.show_sql">${show_sql}</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="DataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName">
+			<value>${driverClassName}</value>
+		</property>
+		<property name="url">
+			<value>${url}</value>
+		</property>
+		<property name="username">
+			<value>${username}</value>
+		</property>
+		<property name="password">
+			<value>${password}</value>
+		</property>
+	</bean>
+
+
+	<bean id="DBO" class="com.web.svs.imp.DBO">
+	<property name="sessionFactory">
+		<ref local="SessionFactory"/>
+	</property>
+	</bean>
+	<!--缓存 <bean id="cacheManager" class="com.kingyi.sz.cache.TCacheManger"> 
+		<property name="configLocation"> <value>classpath:config/ehcache.xml</value> 
+		</property> <property name="diskStoreLocation"> <value>WEB-INF/cache</value> 
+		</property> </bean> <bean id="wxCache" class="org.springframework.cache.ehcache.EhCacheFactoryBean"> 
+		<property name="cacheManager"> <ref local="cacheManager"/> </property> <property 
+		name="cacheName"> <value>com.kingyi.sz.wx</value> </property> </bean> <bean 
+		id="iCache" class="com.kingyi.sz.wx.ICache"> <property name="cache"> <ref 
+		bean="wxCache"/> </property> </bean> -->
+</beans>

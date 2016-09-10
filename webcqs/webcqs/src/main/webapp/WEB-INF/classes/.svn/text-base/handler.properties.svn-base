@@ -1,0 +1,10 @@
+#cqjy
+#JYXM=com.web.cq.svs.imp.CrsqSi
+#ZBGS=com.web.cq.svs.imp.ZbgsSi
+#CJGG=com.web.cq.svs.imp.CjggSi
+#jyht
+JYHT=com.web.jyht.svs.imp.HtSi
+OTREE=com.web.jyht.svs.imp.OTreeSi
+#common
+ORGZ=com.web.cq.svs.imp.Orgz
+TODEL=com.web.svs.imp.ToDSi

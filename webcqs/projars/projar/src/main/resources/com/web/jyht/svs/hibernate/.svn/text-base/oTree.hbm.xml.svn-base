@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.web.jyht.svs.model.OrgTree" table="organize_all" schema="dbo" catalog="[public]">
+    <meta attribute="sync-DAO">false</meta>
+    	<id name="id" type="java.lang.String" column="dwdm"></id>
+    	<property name="parentId" column="parent" type="string" />
+       	<property name="dwdm" column="zs_dwdm" type="string" />	
+		<property name="dwmc" column="dwmc" type="string" />	
+		<property name="level" column="grade" type="java.lang.Integer" />
+    </class>
+</hibernate-mapping>

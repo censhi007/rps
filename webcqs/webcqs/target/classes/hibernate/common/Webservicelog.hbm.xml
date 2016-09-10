@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.webcqs.svs.model">
+	<class name="Webservicelog" table="_webservicelog">
+		<id name="id" type="java.lang.String">
+		   <column length="32" name="id"/>
+		   <generator class="uuid.hex"/>
+        </id>
+		<property name="dw" column="dw" type="string" length="20"/>		
+		<property name="json" column="json" type="string" />
+		<property name="ip" column="ip" type="string" length="32"/>	
+		<property name="sta" column="sta" type="short"/>	
+		<property name="stype" column="stype" type="string"/>
+		<property name="qs" column="qs" type="java.util.Date"/>
+		<property name="zz" column="zz" type="java.util.Date"/>
+		<property name="tm" column="tm" type="java.util.Date"/>	
+		<property name="cnt" column="cnt" type="java.lang.Integer"/>	
+		
+	</class>
+</hibernate-mapping>

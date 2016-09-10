@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>projar</groupId>
+	<artifactId>com.web.jyht.svs</artifactId>
+	<version>1.0</version>
+  	<packaging>jar</packaging>
+	<name>com.web.jyht.svs</name>	
+	<parent>
+	  <groupId>projar</groupId>
+	  <artifactId>pprojar</artifactId>
+	  <version>1.0</version>
+	  <relativePath>../parent</relativePath>
+  	</parent>
+  <properties>
+  	<package.name>com.web.jyht.svs</package.name>
+  	<package.path>com/web/jyht/svs</package.path>
+  </properties>	
+</project>

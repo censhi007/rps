@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans >
+	<bean id="userinfo"  class="com.mboots.com.user.controller.UserAct">
+		<property name="cache" ref="commonCache"></property>
+	</bean>
+	
+	<bean id="nlogin"  class="com.mboots.com.common.controller.NLogin"/>
+	<bean id="nav"  class="com.mboots.com.nav.controller.NavAct">
+		<property name="cache" ref="navCache"></property>
+	</bean>
+</beans>

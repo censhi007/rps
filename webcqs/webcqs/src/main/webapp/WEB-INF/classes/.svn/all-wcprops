@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/classes
+END
+testng.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/classes/testng.xml
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/projectb/!svn/ver/14071/kingyisz2/webcqs/src/main/webapp/WEB-INF/classes/applicationContext.xml
+END
+handler.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/projectb/!svn/ver/14071/kingyisz2/webcqs/src/main/webapp/WEB-INF/classes/handler.properties
+END
+jdbc.properties
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/projectb/!svn/ver/14071/kingyisz2/webcqs/src/main/webapp/WEB-INF/classes/jdbc.properties
+END
+lang_zh.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/projectb/!svn/ver/14071/kingyisz2/webcqs/src/main/webapp/WEB-INF/classes/lang_zh.properties
+END
+log4j.xml
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/projectb/!svn/ver/14043/kingyisz2/webcqs/src/main/webapp/WEB-INF/classes/log4j.xml
+END

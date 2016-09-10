@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/projectb/!svn/ver/14494/kingyisz2/modules/projars/projar/src/main/resources/com/ws/ksoft
+END
+MANIFEST.MF
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/projectb/!svn/ver/14494/kingyisz2/modules/projars/projar/src/main/resources/com/ws/ksoft/MANIFEST.MF
+END
+applicationContext.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/projectb/!svn/ver/14494/kingyisz2/modules/projars/projar/src/main/resources/com/ws/ksoft/applicationContext.xml
+END
+handler.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/projectb/!svn/ver/14494/kingyisz2/modules/projars/projar/src/main/resources/com/ws/ksoft/handler.properties
+END
+readme.md
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/projectb/!svn/ver/14494/kingyisz2/modules/projars/projar/src/main/resources/com/ws/ksoft/readme.md
+END
+lang_zh.properties
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/projectb/!svn/ver/14494/kingyisz2/modules/projars/projar/src/main/resources/com/ws/ksoft/lang_zh.properties
+END

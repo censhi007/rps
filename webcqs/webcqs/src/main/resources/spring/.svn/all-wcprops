@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/projectb/!svn/ver/14474/kingyisz2/webcqs/src/main/resources/spring
+END
+extend.xml
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/projectb/!svn/ver/14512/kingyisz2/webcqs/src/main/resources/spring/extend.xml
+END
+hibernate.xml
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/projectb/!svn/ver/14512/kingyisz2/webcqs/src/main/resources/spring/hibernate.xml
+END
+beans.xml
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/projectb/!svn/ver/14497/kingyisz2/webcqs/src/main/resources/spring/beans.xml
+END

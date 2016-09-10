@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.mboots.com.user.model.User" table="users" schema="dbo" catalog="[public]" >
+        <id name="id" type="java.lang.String">
+            <column name="userid" length="36" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="name" length="20" />
+        </property>
+        <property name="logname" type="java.lang.String">
+            <column name="username" length="20" />
+        </property>
+        <property name="pwd" type="java.lang.String">
+            <column name="password" length="32"/>
+        </property>   
+        <property name="init" type="java.lang.Integer">
+            <column name="cs"/>
+        </property>       
+    </class>
+</hibernate-mapping>

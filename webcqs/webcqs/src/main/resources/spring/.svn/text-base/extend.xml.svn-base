@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+<!-- please don`t change this xml,it will be rewritten automatically with the data included by the module jars in the WEB-INF/lib/modules-->
+</beans>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>取款审核</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">
+	var ctx = window.location.pathname;
+	ctx=/\/[\w-\.]+/.exec(ctx)[0];
+	document.write("<link href=\""+ctx+"/libs/bootstrap/css/bootstrap.min.css\" rel=\"stylesheet\">");	
+	document.write("<script src=\""+ctx+"/libs/sea.js\" data-main=\"js/main\" onload=\"javasctipt:seaload();\"><\/script>");	
+	function seaload(){
+		seajs.config({
+			base:ctx+"/tlcheck/",
+			alias:{
+				"jquery":ctx+"/libs/jquery/1.11.2/jquery.js",
+				"bootstrap":ctx+"/libs/bootstrap/js/bootstrap.min.js",
+				"underscore":ctx+"/libs/underscore.js",
+				"backbone":ctx+"/libs/backbone.js",
+				"m5":ctx+"/libs/MD5.js"
+			}
+		});
+		seajs.use("js/main");
+	}	
+</script>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+   
+</nav>
+</header>
+<article>
+</article>
+<footer>
+	<address>
+	</address>
+</footer>
+<script type="text/template" id="templatelform">
+  <div class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" id="mheader<%- id%>">
+          <button type="button" class="close"  data-dismiss="modal" aria-hidden="true"> &times; </button>			
+          <h4 class="modal-title" id="mtitle<%- id%>">登录</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" action="<%- ctx%>/restful/userinfo/validation" role="form" id="lform<%- id%>"> 
+            <div class="form-group row">
+              <label for="u<%- id%>" class="col-sm-2 col-sm-offset-1 control-label">账&nbsp;&nbsp;户：</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" name="name" value="<%- name%>" id="u<%- id%>"  data-placement="top" data-html="true" data-content="<strong>至少两位字符，且首位不能是空格</strong>" pattern="^[^\s].+$" required="required"  placeholder="请输入账户号" autofocus="autofocus" autocomplete="on"/>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="p<%- id%>" class="col-sm-2 col-sm-offset-1 control-label">密&nbsp;&nbsp;码：</label>
+              <div class="col-sm-8">
+                <input type="password" class="form-control" name="pwd" id="p<%- id%>" pattern="^.{2,32}$" maxlength="32"  data-placement="top" data-html="true" data-content="<strong>密码必须在2~32位之间</strong>" required="required"  placeholder="请输入密码" data-covert="encypt"/>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="v<%- id%>" class="col-sm-2 col-sm-offset-1 control-label">验证码：</label>
+              <div class="col-sm-2">
+                <input type="text" class="form-control" name="vcod" id="v<%- id%>" pattern="^\w{4}$" maxlength="4"  data-placement="bottom" data-html="true" data-content="<strong>输入4位验证码</strong>" required="required"  placeholder="验证码"/>
+              </div>
+			  <div class="col-sm-2 text-left nomargin"><img src="<%- vcode%>"  name="vcrefresh" width="100%" height="100%"></div>
+		 	  <div class="col-sm-2 text-left nomargin"">
+                <a href="#" name="vcrefresh">看不清？</a>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div  class="col-sm-3 col-sm-offset-3">
+				<% if(storage){%>
+                 <div class="checkbox"><label><input type="checkbox" id="remenber<%- id%>" class="remenberpwd" <%if(checked){%>checked="checked"<%}%>>记住密码</label>
+                 </div>
+				<%}%>
+              </div>
+			  <div class="col-sm-5"> 
+				<button type="button" class="btn btn-default"  data-dismiss="modal">关闭</button>
+				<button type="submit" class="btn btn-primary" form="lform<%- id%>">登陆 </button>
+			  </div>
+            </div>
+          </form>
+        </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</script>
+<script type="text/template" id="templatelrpassword">
+  <div class="modal fade" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header" id="mheader<%- id%>">
+          <button type="button" class="close"  data-dismiss="modal" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="关闭窗口将丢弃修改" > &times; </button>			
+          <h4 class="modal-title" id="mtitle<%- id%>"><%- title%></h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal" action="<%- ctx%>/restful/userinfo/rebuildpass" role="form" id="lform<%- id%>"> 
+            <div class="form-group row">
+              <label for="u<%- id%>" class="col-sm-3 col-sm-offset-1  control-label">账&nbsp;&nbsp;户：</label>
+              <div class="col-sm-4">
+               <input class="form-control" type="text" name="name"  value="<%- uname%>" readonly="readonly"/>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="p<%- id%>" class="col-sm-3 col-sm-offset-1  control-label">旧密码：</label>
+              <div class="col-sm-4">
+                <input type="password" class="form-control" name="pwd" id="p<%- id%>" pattern="^.{2,32}$" maxlength="32"  data-placement="top" data-html="true" data-content="<strong>密码必须在2~32位之间</strong>" required="required"  placeholder="请输入旧密码" data-covert="encypt"/>
+              </div>
+			<div class="col-sm-4" ><div id="tips0p2<%- id%>" class="form-control alert-info nowrap overhide">请输入原始密码。</div></div>
+            </div>
+            <div class="form-group row">
+              <label for="pn<%- id%>" class="col-sm-3 col-sm-offset-1  control-label">新密码：</label>
+              <div class="col-sm-4">
+                <input type="password" class="form-control" name="npwd" id="pn<%- id%>" patternfunc="valipass1" maxlength="32"  data-placement="top" data-html="true" required="required"  placeholder="请输入新密码" data-covert="encypt"/>
+              </div>
+			<div class="col-sm-4" >
+				<div id="tips0pn<%- id%>" ord="0" style="border:none;" class="form-control nowrap overhide nohorizpadding ">
+				<div class="form-control progress nohorizpadding">
+   					<div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+      					<span class="sr-only">0% 完成</span>
+   					</div>
+				</div>
+				</div>
+				<div id="tips1pn<%- id%>" ord="1" style="border:none;display:none;" class="form-control nowrap overhide nohorizpadding "data-toggle="tooltip" title="弱">
+				<div class="form-control progress nohorizpadding novertipadding">
+   					<div class="progress-bar  progress-bar-danger " role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+      					<span class="sr-only">25% 完成</span>
+   					</div>
+				</div>
+				<span class="badge label-danger" style="float:right">弱</span>
+				</div>
+				<div id="tips2pn<%- id%>" ord="2" style="border:none;display:none;" class="form-control nowrap overhide nohorizpadding " data-toggle="tooltip" title="中">
+				<div class="form-control progress nohorizpadding novertipadding">
+   					<div class="progress-bar  progress-bar-warnning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+      					<span class="sr-only">40% 完成</span>
+   					</div>
+				</div>
+				<span class="badge label-warnning" style="float:right">中</span>
+				</div>
+				<div id="tips3pn<%- id%>" ord="3" style="border:none;display:none;" class="form-control nowrap overhide nohorizpadding " data-toggle="tooltip" title="中">
+				<div class="form-control progress nohorizpadding novertipadding">
+   					<div class="progress-bar  progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+      					<span class="sr-only">40% 完成</span>
+   					</div>
+				</div>
+				<span class="badge label-success" style="float:right">中</span>
+				</div>
+				<div id="tips4pn<%- id%>" ord="4" style="border:none;display:none;" class="form-control nowrap overhide nohorizpadding " data-toggle="tooltip" title="强">
+				<div  class="form-control progress nohorizpadding novertipadding">
+   					<div class="progress-bar  progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+      					<span class="sr-only">40% 完成</span>
+   					</div>
+				</div>
+				<span class="badge label-success" style="float:right">强</span>
+				</div>
+			</div>
+            </div>
+            <div class="form-group row">
+              <label for="p2<%- id%>" class="col-sm-3 col-sm-offset-1 control-label">确认密码：</label>
+              <div class="col-sm-4">
+                <input type="password" class="form-control" id="p2<%- id%>" patternfunc="valipass2" comparewith="pn<%- id%>" maxlength="32"  data-placement="top" data-html="true" data-content="<strong>两次输入的密码必须一直</strong>" required="required"  placeholder="确认新密码" data-covert="encypt"/>
+              </div>
+			<div class="col-sm-4" >
+				<div id="tips0p2<%- id%>" ord="0" class="form-control alert-info nowrap overhide" >请重新输入新密码。</div>
+				<div id="tips1p2<%- id%>" ord="1" class="form-control alert-danger nowrap overhide"  style="display:none">两次输入的密码不一致！</div>
+				<div id="tips2p2<%- id%>" ord="2" class="form-control alert-success nowrap overhide" style="display:none">成功！</div>
+			</div>
+            </div>
+            <div class="form-group row">
+              <div  class="col-sm-3 col-sm-offset-3">
+              </div>
+			  <div class="col-sm-5"> 
+				<button type="button" class="btn btn-default tooltip-tes" data-toggle="tooltip" data-placement="top" title="关闭窗口将丢弃修改"  data-dismiss="modal" >关闭</button>
+				<button type="submit" class="btn btn-primary" form="lform<%- id%>">确认 </button>
+			  </div>
+            </div>
+          </form>
+        </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</script>
+<script type="text/template" id="templatelnav">
+<div class="navbar-header">
+      <a class="navbar-brand" href="#"><%- name%></a>
+   </div>
+   <div>
+      <ul class="nav navbar-nav">         
+      </ul>
+   </div>
+</script>
+<script type="text/template" id="templatelnavitem">
+<a href="<%-path%>"><%- name%></a>
+</script>
+<script type="text/template" id="templateluser">
+</script>
+</body>
+</html>
